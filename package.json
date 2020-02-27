@@ -1,11 +1,32 @@
 {
-  "name": "react-test-component",
-  "version": "1.0.0",
+  "name": "react-test-components",
+  "version": "1.0.3",
   "description": "React test component",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean-dist": "rm -rf ./dist",
+    "build": "npm run clean-dist && NODE_ENV=production `npm bin`/babel ./src --out-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatasva/react-test-component.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "styled-components": "^5.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "styled-components": "^5.x"
+  },
+  "dependencies": {}
 }
