@@ -1,6 +1,6 @@
 {
   "name": "react-test-components",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "React test component",
   "main": "dist/index.js",
   "scripts": {
